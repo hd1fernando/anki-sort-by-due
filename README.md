@@ -1,48 +1,48 @@
 # Sort Decks by Column
 
-Complemento para o Anki que permite ordenar os baralhos na tela inicial clicando no cabeçalho de uma coluna. Funciona com **Baralho**, **Novo**, **Aprender** e **Revisar**, em qualquer idioma, pois a coluna é identificada pela posição, não pelo texto.
+An Anki add-on that lets you sort the decks on the main screen by clicking a column header. It works with **Deck**, **New**, **Learn** and **Review** in any interface language, because the column is identified by its position, not by its label.
 
-## Instalação
+## Installation
 
-1. Baixe o arquivo `.ankiaddon` na aba [Releases](https://github.com/hd1fernando/anki-sort-by-due/releases).
-2. Abra o arquivo baixado (duplo clique) ou use **Ferramentas → Complementos → Instalar do arquivo...**.
-3. Reinicie o Anki.
+1. Download the `.ankiaddon` file from the [Releases](https://github.com/hd1fernando/anki-sort-by-due/releases) page.
+2. Open the downloaded file (double-click) or use **Tools → Add-ons → Install from file...**.
+3. Restart Anki.
 
-## Uso
+## Usage
 
-Clique no cabeçalho da coluna desejada:
+Click the header of the column you want to sort by:
 
-- **1º clique:** ordem crescente (`▲`);
-- **clique na mesma coluna:** inverte para decrescente (`▼`);
-- **clique em outra coluna:** volta à ordem crescente.
+- **First click:** ascending order (`▲`);
+- **clicking the same column:** switches to descending order (`▼`);
+- **clicking another column:** resets to ascending order.
 
-Baralhos filhos acompanham o baralho pai, preservando a hierarquia. A última coluna e direção são reaplicadas quando a tela é atualizada (se `remember_last_sort` estiver ativo).
+Subdecks stay with their parent deck, so the hierarchy is preserved. The last column and direction are reapplied whenever the screen is refreshed (if `remember_last_sort` is enabled).
 
-A ordenação é apenas visual: ela não altera a ordem real de estudo nem os dados da coleção.
+Sorting is visual only: it does not change the actual study order or any collection data.
 
-## Compatibilidade
+## Compatibility
 
-- Anki Desktop 2.1.50 ou superior, incluindo as versões 25.x e 26.x.
-- Testado no Anki 26.09.4.
+- Anki Desktop 2.1.50 or newer, including 25.x and 26.x.
+- Tested on Anki 26.09.4.
 
-## Configurações
+## Configuration
 
-Acesse **Ferramentas → Complementos → Sort Decks by Column → Editar...**:
+Go to **Tools → Add-ons → Sort Decks by Column → Edit...**:
 
-| Opção | Padrão | Descrição |
+| Option | Default | Description |
 | --- | --- | --- |
-| `enabled` | `true` | Ativa ou desativa o complemento. |
-| `show_indicator` | `true` | Exibe `▲`/`▼` no cabeçalho usado. |
-| `remember_last_sort` | `true` | Reaplica a última ordenação após cada renderização. |
+| `enabled` | `true` | Enables or disables the add-on. |
+| `show_indicator` | `true` | Shows `▲`/`▼` on the active header. |
+| `remember_last_sort` | `true` | Reapplies the last sort after every render. |
 
-## Desenvolvimento
+## Development
 
 ```bash
 python3 scripts/build.py
 ```
 
-O comando gera `dist/sort_by_due-1.0.0.ankiaddon` com o conteúdo da pasta `addon/` na raiz do arquivo. Para testar localmente, extraia o conteúdo da pasta `addon/` em `addons21/sort_by_due/` e reinicie o Anki.
+This generates `dist/sort_by_due-1.0.0.ankiaddon` with the contents of the `addon/` folder at the root of the archive. To test locally, extract the contents of `addon/` into `addons21/sort_by_due/` and restart Anki.
 
-## Licença
+## License
 
-MIT — veja [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
