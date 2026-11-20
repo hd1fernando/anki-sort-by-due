@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 ADDON = ROOT / "addon"
 DIST = ROOT / "dist"
-VERSION = "1.0.0"
+VERSION = "00.01.00"
 OUTPUT = DIST / f"sort_by_due-{VERSION}.ankiaddon"
 EXCLUDED_DIRS = {"__pycache__"}
 EXCLUDED_SUFFIXES = {".pyc"}

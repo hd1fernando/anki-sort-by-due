@@ -1,7 +1,7 @@
 {
   "package": "sort_by_due",
   "name": "Sort Decks by Column",
-  "human_version": "1.0.0",
+  "human_version": "00.01.00",
   "homepage": "https://github.com/hd1fernando/anki-sort-by-due",
   "conflicts": [],
   "min_point_version": 50,

@@ -41,7 +41,7 @@ Go to **Tools → Add-ons → Sort Decks by Column → Edit...**:
 python3 scripts/build.py
 ```
 
-This generates `dist/sort_by_due-1.0.0.ankiaddon` with the contents of the `addon/` folder at the root of the archive. To test locally, extract the contents of `addon/` into `addons21/sort_by_due/` and restart Anki.
+This generates `dist/sort_by_due-00.01.00.ankiaddon` with the contents of the `addon/` folder at the root of the archive. To test locally, extract the contents of `addon/` into `addons21/sort_by_due/` and restart Anki.
 
 ## License
 

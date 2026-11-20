@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0
+## 00.01.00
 
 - Ordenação dos baralhos pelo índice da coluna clicada, sem depender do idioma da interface.
 - Colunas disponíveis: Baralho, Novo, Aprender e Revisar.
